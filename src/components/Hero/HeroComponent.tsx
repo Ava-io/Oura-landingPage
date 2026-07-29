@@ -1,12 +1,8 @@
-
 import { motion } from "framer-motion";
 
 const HeroComponent = () => {
   return (
-    <div
-      className="min-h-screen bg-cover bg-center flex items-center px-13"
-
-    >
+    <div className="min-h-screen bg-cover bg-center flex items-center px-13">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -52,12 +48,12 @@ const HeroComponent = () => {
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}
-          className="mt-12 md:mt-16 lg:mt-20
-                     max-w-2xl
-                     text-white
-                     text-base sm:text-lg md:text-xl
-                     leading-relaxed
-                     text-left"
+          className="mt-8 sm:mt-12 md:mt-16 lg:mt-20
+           max-w-full sm:max-w-lg md:max-w-2xl
+           text-white
+           text-sm sm:text-base md:text-lg lg:text-xl
+           leading-relaxed
+           text-left"
         >
           Oura Ring is the first wearable designed to paint a truly holistic
           picture of your health. Born in Finland, our superior craftsmanship
