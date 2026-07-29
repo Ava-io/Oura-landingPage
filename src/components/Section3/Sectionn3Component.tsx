@@ -17,13 +17,13 @@ const Sectionn3Component = () => {
   };
 
   return (
-    <div className="lg:px-[100px] mt-[100px]">
-      <div className="grid grid-cols-3 gap-4">
+    <div className="lg:px-[100px] lg:mt-[100px] px-4 sm:px-8 mt-16 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
         {/* Image card */}
         <motion.div
           initial="rest"
           whileHover="hover"
-          className="h-[800px] relative overflow-hidden rounded-lg"
+          className="h-[400px] sm:h-[500px] lg:h-[800px] relative overflow-hidden rounded-lg"
         >
           <motion.img
             variants={imageVariants}
@@ -52,7 +52,7 @@ const Sectionn3Component = () => {
         <motion.div
           initial="rest"
           whileHover="hover"
-          className="h-[800px] relative overflow-hidden rounded-lg"
+          className="h-[400px] sm:h-[500px] lg:h-[800px] relative overflow-hidden rounded-lg"
         >
           <motion.img
             variants={imageVariants}
@@ -81,7 +81,7 @@ const Sectionn3Component = () => {
         <motion.div
           initial="rest"
           whileHover="hover"
-          className="h-[800px] relative overflow-hidden rounded-lg"
+          className="h-[400px] sm:h-[500px] lg:h-[800px] relative overflow-hidden rounded-lg"
         >
           <motion.img
             variants={imageVariants}

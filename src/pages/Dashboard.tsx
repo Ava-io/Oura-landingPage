@@ -4,6 +4,7 @@ import heroImage from "../assets/why-oura-card.jpg.avif";
 import SectionTwoComponent from "../components/Section2/SectionTwoComponent";
 import Sectionn3Component from "../components/Section3/Sectionn3Component";
 import Section4Componnent from "../components/Section4/Section4Componnent";
+import Section5Component from "../components/Section5/Section5Component";
 
 const Dashboard = () => {
   return (
@@ -33,6 +34,10 @@ const Dashboard = () => {
 
       <div>
         <Section4Componnent />
+      </div>
+
+      <div>
+        <Section5Component />
       </div>
     </div>
   );
