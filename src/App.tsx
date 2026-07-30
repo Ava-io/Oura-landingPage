@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div className="font-sans ">
       <Routes>
-        <Route element={<DashLayout />} path="/dashboard"></Route>
+        <Route element={<DashLayout />} path=""></Route>
       </Routes>
     </div>
   );
