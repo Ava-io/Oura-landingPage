@@ -7,6 +7,8 @@ import Section4Componnent from "../components/Section4/Section4Componnent";
 import Section5Component from "../components/Section5/Section5Component";
 import Section6Component from "../components/Section6/Section6Component";
 import Section7Component from "../components/Section7/Section7Component";
+import Section8Component from "../components/Section8/Section8Component";
+import FooterComponents from "../components/Footer/FooterComponents";
 
 const Dashboard = () => {
   return (
@@ -48,6 +50,16 @@ const Dashboard = () => {
 
       <div>
         <Section7Component />
+      </div>
+
+      <div className="bg-[#232221]">
+        <div>
+          <Section8Component />
+        </div>
+
+        <div>
+          <FooterComponents />
+        </div>
       </div>
     </div>
   );

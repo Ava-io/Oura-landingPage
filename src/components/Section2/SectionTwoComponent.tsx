@@ -7,7 +7,7 @@ const SectionTwoComponent = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="flex flex-col gap-2 items-center pt-[200px] lg:pt-[150px] md:pt-[100px] sm:pt-[20px]"
+        className="flex flex-col gap-2 items-center pt-50 lg:pt-37.5 md:pt-25 sm:pt-5"
       >
         <span
           className="text-[#5e5a54] font-extralight font-sans
@@ -42,7 +42,7 @@ const SectionTwoComponent = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="flex items-start mt-32 flex-col lg:flex-row justify-between gap-8  px-6 sm:px-12 md:px-20 lg:px-[100px]"
+        className="flex items-start mt-32 flex-col lg:flex-row justify-between gap-8  px-6 sm:px-12 md:px-20 lg:px-25"
       >
         {/* left and right */}
         {/* left */}
@@ -61,7 +61,7 @@ const SectionTwoComponent = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
             className="text-[#706d68] font-serif font-extralight
-                 text-5xl sm:text-5xl md:text-6xl lg:text-7xl pl-8 sm:pl-16 md:pl-32 lg:pl-[250px]"
+                 text-5xl sm:text-5xl md:text-6xl lg:text-7xl pl-8 sm:pl-16 md:pl-32 lg:pl-62.5"
           >
             not burnout.
           </motion.em>
@@ -79,7 +79,7 @@ const SectionTwoComponent = () => {
                      text-base sm:text-lg md:text-xl
                      lg:text-[15px] font-sans
                      leading-relaxed
-                     text-left pl-0 sm:pl-8 md:pl-16 lg:pl-[100px]"
+                     text-left pl-0 sm:pl-8 md:pl-16 lg:pl-25"
           >
             As Oura evolves, we remain rooted in Nordic wellness principles —
             that a healthy life is not one of extremes but one of balance. In a

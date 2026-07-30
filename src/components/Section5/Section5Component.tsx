@@ -39,9 +39,9 @@ const Section5Component = () => {
     },
   ];
   return (
-    <div className="pt-8 sm:pt-12 lg:pt-[60px] relative">
+    <div className="pt-8 sm:pt-12 lg:pt-15 relative">
       <div>
-        <div className="w-full h-[300px] sm:h-[500px] lg:h-[850px] relative">
+        <div className="w-full h-75 sm:h-125 lg:h-212.5 relative">
           <motion.img
             src={section5Image}
             alt=""
@@ -51,7 +51,7 @@ const Section5Component = () => {
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="px-4 sm:px-6 lg:px-0 mt-0  lg:absolute lg:top-[50px] lg:left-[80px] flex flex-col items-start justify-center leading-tight">
+        <div className="px-4 sm:px-6 lg:px-0 mt-0  lg:absolute lg:top-12.5 lg:left-20 flex flex-col items-start justify-center leading-tight">
           <motion.span
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
@@ -69,7 +69,7 @@ const Section5Component = () => {
             it's personal
           </motion.em>
         </div>
-        <div className="px-4 sm:px-6 lg:px-0 mt-8 lg:mt-0 lg:absolute lg:bottom-[50px] lg:left-[80px]">
+        <div className="px-4 sm:px-6 lg:px-0 mt-8 lg:mt-0 lg:absolute lg:bottom-12.5 lg:left-20">
           <motion.p
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
@@ -82,7 +82,7 @@ const Section5Component = () => {
           </motion.p>
         </div>
 
-        <div className="px-4 sm:px-6 lg:px-0 mt-8 lg:mt-0 lg:absolute lg:right-[80px] lg:top-[110px] grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-col gap-4 lg:gap-7">
+        <div className="px-4 sm:px-6 lg:px-0 mt-8 lg:mt-0 lg:absolute lg:right-20 lg:top-27.5 grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-col gap-4 lg:gap-7">
           {statsData.map((item, index) => (
             <motion.div
               key={index}

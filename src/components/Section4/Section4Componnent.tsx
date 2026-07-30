@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Section4Componnent = () => {
   return (
-    <div className="mt-24 sm:mt-32 lg:mt-[250px] px-4 sm:px-8 lg:px-[100px]">
+    <div className="mt-24 sm:mt-32 lg:mt-62.5 px-4 sm:px-8 lg:px-25">
       <div className="flex flex-col gap-5 items-center justify-center">
         <div className="items-center flex flex-wrap justify-center gap-2 sm:gap-4 text-center">
           <motion.em
@@ -37,7 +37,7 @@ const Section4Componnent = () => {
       </div>
 
       {/* seconnd div in section4 */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-4 mt-20 sm:mt-32 lg:mt-[200px]">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-4 mt-20 sm:mt-32 lg:mt-50">
         <div className=" gap-3 sm:border-r-2 sm:border-r-[#706d68] pb-8 sm:pb-0">
           <div className="flex flex-col text-center">
             <span className="text-3xl sm:text-4xl lg:text-5xl text-[#706d68] font-thin font-serif leading-none">

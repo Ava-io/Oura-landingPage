@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import s3i1 from "../../assets/relaxed.jpeg.avif";
 import s3i2 from "../../assets/restored.jpeg.avif";
 import s3i3 from "../../assets/lifestyle-3.jpg.avif";
@@ -6,24 +6,24 @@ import s3i3 from "../../assets/lifestyle-3.jpg.avif";
 import relaxedImage from "../../assets/why_oura_relaxed_ui-en.png.avif";
 
 const Sectionn3Component = () => {
-  const imageVariants = {
+  const imageVariants: Variants = {
     rest: { y: 0, transition: { duration: 0.7, ease: "easeInOut" } },
     hover: { y: "-50%", transition: { duration: 0.7, ease: "easeInOut" } },
   };
 
-  const revealVariants = {
+  const revealVariants: Variants = {
     rest: { y: "100%", transition: { duration: 0.7, ease: "easeInOut" } },
     hover: { y: "0%", transition: { duration: 0.7, ease: "easeInOut" } },
   };
 
   return (
-    <div className="lg:px-[100px] lg:mt-[100px] px-4 sm:px-8 mt-16 ">
+    <div className="lg:px-25 lg:mt-25 px-4 sm:px-8 mt-16 ">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
         {/* Image card */}
         <motion.div
           initial="rest"
           whileHover="hover"
-          className="h-[400px] sm:h-[500px] lg:h-[800px] relative overflow-hidden rounded-lg"
+          className="h-100 sm:h-125 lg:h-200 relative overflow-hidden rounded-lg"
         >
           <motion.img
             variants={imageVariants}
@@ -52,7 +52,7 @@ const Sectionn3Component = () => {
         <motion.div
           initial="rest"
           whileHover="hover"
-          className="h-[400px] sm:h-[500px] lg:h-[800px] relative overflow-hidden rounded-lg"
+          className="h-100 sm:h-125 lg:h-200 relative overflow-hidden rounded-lg"
         >
           <motion.img
             variants={imageVariants}
@@ -81,7 +81,7 @@ const Sectionn3Component = () => {
         <motion.div
           initial="rest"
           whileHover="hover"
-          className="h-[400px] sm:h-[500px] lg:h-[800px] relative overflow-hidden rounded-lg"
+          className="h-100 sm:h-125 lg:h-200 relative overflow-hidden rounded-lg"
         >
           <motion.img
             variants={imageVariants}

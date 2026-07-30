@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, type Variants } from "framer-motion";
 import ringImage1 from "../../assets/coop-ring-header.jpg";
 import ringImage2 from "../../assets/or4-card.jpg";
 import { GoArrowRight } from "react-icons/go";
@@ -22,7 +22,7 @@ import Button from "../../shared/Button";
 import { HiMenu, HiX } from "react-icons/hi";
 
 // Reusable animation variants
-const dropdownVariants = {
+const dropdownVariants: Variants = {
   hidden: { opacity: 0, y: -8 },
   visible: {
     opacity: 1,
@@ -32,13 +32,13 @@ const dropdownVariants = {
   exit: { opacity: 0, y: -8, transition: { duration: 0.18, ease: "easeIn" } },
 };
 
-const mobileMenuVariants = {
+const mobileMenuVariants: Variants = {
   hidden: { opacity: 0, y: -16 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.3, ease: "easeOut" } },
   exit: { opacity: 0, y: -16, transition: { duration: 0.2, ease: "easeIn" } },
 };
 
-const accordionVariants = {
+const accordionVariants: Variants = {
   hidden: { height: 0, opacity: 0 },
   visible: {
     height: "auto",
@@ -62,7 +62,7 @@ const NavComponent = () => {
     setMobileSection((prev) => (prev === section ? null : section));
   };
 
-  const openMenu = (menu: string) => {
+  const openMenu = (menu: any) => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
@@ -113,7 +113,7 @@ const NavComponent = () => {
                       className="absolute left-0 top-full w-full z-50 rounded-b-3xl bg-[#F7F1E8] p-8 shadow-xl "
                     >
                       <div className="flex gap-6 w-full justify-center">
-                        <div className="relative overflow-hidden group rounded-3xl cursor-pointer w-[300px] h-[192px]">
+                        <div className="relative overflow-hidden group rounded-3xl cursor-pointer w-75 h-48">
                           <img
                             src={ringImage1}
                             alt=""
@@ -129,7 +129,7 @@ const NavComponent = () => {
                           </div>
                         </div>
 
-                        <div className="relative overflow-hidden group rounded-3xl cursor-pointer w-[300px] h-[192px]">
+                        <div className="relative overflow-hidden group rounded-3xl cursor-pointer w-75 h-48">
                           <img
                             src={ringImage2}
                             alt=""
@@ -145,7 +145,7 @@ const NavComponent = () => {
                           </div>
                         </div>
 
-                        <div className="w-[240px] flex flex-col justify-center gap-5 px-2">
+                        <div className="w-60 flex flex-col justify-center gap-5 px-2">
                           <ul className="flex flex-col gap-4">
                             <li className="group flex gap-3 items-center cursor-pointer">
                               <img
@@ -227,7 +227,7 @@ const NavComponent = () => {
                       className="absolute left-0 top-full w-full z-50 rounded-b-3xl bg-[#F7F1E8] p-8 shadow-xl "
                     >
                       <div className="flex gap-6 max-w-7xl mx-auto justify-center">
-                        <div className="relative overflow-hidden group rounded-3xl cursor-pointer w-[300px] h-[192px]">
+                        <div className="relative overflow-hidden group rounded-3xl cursor-pointer w-75 h-48">
                           <img
                             src={healthnavImage}
                             alt=""
@@ -243,7 +243,7 @@ const NavComponent = () => {
                           </div>
                         </div>
 
-                        <div className="w-[220px] flex flex-col justify-start gap-5 px-2">
+                        <div className="w-55 flex flex-col justify-start gap-5 px-2">
                           <ul className="flex flex-col gap-4">
                             <Link to="">
                               <li className="group flex gap-3 items-center cursor-pointer">
@@ -291,7 +291,7 @@ const NavComponent = () => {
                           </ul>
                         </div>
 
-                        <div className="w-[220px] flex flex-col justify-start gap-5 px-2">
+                        <div className="w-55 flex flex-col justify-start gap-5 px-2">
                           <ul className="flex flex-col gap-4">
                             <Link to="">
                               <li className="group flex gap-3 items-center cursor-pointer ">
@@ -366,7 +366,7 @@ const NavComponent = () => {
                       className="absolute left-0 top-full w-full z-50 rounded-b-3xl bg-[#F7F1E8] p-8 shadow-xl "
                     >
                       <div className="flex gap-6 w-full justify-center">
-                        <div className="relative overflow-hidden group rounded-3xl cursor-pointer w-[300px] h-[192px]">
+                        <div className="relative overflow-hidden group rounded-3xl cursor-pointer w-75 h-48">
                           <img
                             src={experienceNavImage}
                             alt=""
@@ -382,7 +382,7 @@ const NavComponent = () => {
                           </div>
                         </div>
 
-                        <div className="w-[240px] flex flex-col justify-center gap-5 px-2">
+                        <div className="w-60 flex flex-col justify-center gap-5 px-2">
                           <ul className="flex flex-col gap-4">
                             <Link to="">
                               <li className="group flex gap-3 items-center cursor-pointer">

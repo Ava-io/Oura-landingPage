@@ -6,8 +6,8 @@ import s6i4 from "../../assets/stealth-finish.jpg.avif";
 
 const Section6Component = () => {
   return (
-    <div className="pt-[150px]">
-      <div className="flex flex-col lg:flex-row justify-between px-4 sm:px-10 lg:px-[100px] gap-6 lg:gap-4">
+    <div className="pt-37.5">
+      <div className="flex flex-col lg:flex-row justify-between px-4 sm:px-10 lg:px-25 gap-6 lg:gap-4">
         <div className="flex flex-col">
           <motion.span
             initial={{ opacity: 0, x: -40 }}
@@ -44,7 +44,7 @@ const Section6Component = () => {
       </div>
 
       {/* Image div */}
-      <div className="pt-16 sm:pt-24 lg:pt-[150px] px-4 sm:px-8 lg:px-[100px]">
+      <div className="pt-16 sm:pt-24 lg:pt-37.5 px-4 sm:px-8 lg:px-25">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 items-end">
           {/* first image */}
           <div>
@@ -60,7 +60,7 @@ const Section6Component = () => {
                   className="rounded-t-lg w-full h-auto"
                 />
               </div>
-              <div className="w-full h-[280px] sm:h-[350px] lg:h-[450px] ">
+              <div className="w-full h-70 sm:h-87.5 lg:h-112.5 ">
                 <motion.img
                   src={s6i2}
                   alt=""
@@ -75,7 +75,7 @@ const Section6Component = () => {
           </div>
 
           {/* Second image */}
-          <div className="w-full h-[350px] sm:h-[450px] lg:h-[550px] ">
+          <div className="w-full h-87.5 sm:h-112.5 lg:h-137.5 ">
             <motion.img
               src={s6i3}
               alt=""
@@ -88,7 +88,7 @@ const Section6Component = () => {
           </div>
 
           {/* Third image */}
-          <div className="w-full h-[320px] sm:h-[400px] lg:h-[500px] ">
+          <div className="w-full h-80 sm:h-100 lg:h-125 ">
             <motion.img
               src={s6i4}
               alt=""
